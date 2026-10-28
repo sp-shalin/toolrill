@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="../../src/ToolRill.Core/ToolRill.Core.csproj" />
+    <ProjectReference Include="../../src/ToolRill.Server/ToolRill.Server.csproj" />
+    <ProjectReference Include="../../src/ToolRill/ToolRill.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../samples/StdioServer/StdioServer.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

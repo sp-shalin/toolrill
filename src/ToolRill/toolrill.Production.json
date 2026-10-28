@@ -1,0 +1,12 @@
+{
+  "diagnostics": {
+    "enabled": true,
+    "level": "INFO"
+  },
+  "hosts": [
+    {
+      "name": "default",
+      "outgoing": []
+    }
+  ]
+}

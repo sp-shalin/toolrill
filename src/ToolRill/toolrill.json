@@ -1,0 +1,56 @@
+{
+  "diagnostics": {
+    "enabled": true,
+    "level": "INFO"
+  },
+  "hosts": [
+    {
+      "name": "default",
+      "incoming": {
+        "transport": "stdio"
+      },
+      "outgoing": [
+        {
+          "name": "server-a",
+          "enabled": true,
+          "tools": {
+            "include": [],
+            "exclude": []
+          },
+          "transport": "stdio",
+          "command": "dotnet",
+          "arguments": [
+            "run"
+          ],
+          "projectPath": "./samples/StdioServer/StdioServer.csproj"
+        },
+        {
+          "name": "server-b",
+          "enabled": true,
+          "tools": {
+            "include": [],
+            "exclude": []
+          },
+          "transport": "streamable-http",
+          "url": "http://localhost:5051/mcp"
+        }
+      ]
+    },
+    {
+      "name": "development",
+      "incoming": {
+        "transport": "streamable-http",
+        "url": "http://127.0.0.1:3101"
+      },
+      "outgoing": []
+    },
+    {
+      "name": "work",
+      "incoming": {
+        "transport": "streamable-http",
+        "url": "http://127.0.0.1:3102"
+      },
+      "outgoing": []
+    }
+  ]
+}

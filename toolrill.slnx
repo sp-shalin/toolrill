@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/ToolRill.Benchmarks/ToolRill.Benchmarks.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/StdioServer/StdioServer.csproj" />
+    <Project Path="samples/HttpServer/HttpServer.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ToolRill/ToolRill.csproj" />
+    <Project Path="src/ToolRill.Client/ToolRill.Client.csproj" />
+    <Project Path="src/ToolRill.Core/ToolRill.Core.csproj" />
+    <Project Path="src/ToolRill.Server/ToolRill.Server.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ToolRill.TestSupport/ToolRill.TestSupport.csproj" />
+    <Project Path="tests/ToolRill.UnitTests/ToolRill.UnitTests.csproj" />
+    <Project Path="tests/ToolRill.IntegrationTests/ToolRill.IntegrationTests.csproj" />
+    <Project Path="tests/ToolRill.ProtocolTests/ToolRill.ProtocolTests.csproj" />
+    <Project Path="tests/ToolRill.ConcurrencyTests/ToolRill.ConcurrencyTests.csproj" />
+  </Folder>
+</Solution>

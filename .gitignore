@@ -1,0 +1,38 @@
+# .NET build and package output
+bin/
+obj/
+artifacts/
+*.nupkg
+*.snupkg
+
+# Test, coverage, and benchmark output
+TestResults/
+BenchmarkDotNet.Artifacts/
+coverage/
+*.trx
+*.coverage
+*.coverage.*
+coverage.cobertura.xml
+coverage.opencover.xml
+lcov.info
+
+# Local IDE state (shared .vscode configuration remains publishable)
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local environment and diagnostic output
+.env
+.env.*
+!.env.example
+!.env.*.example
+logs/
+*.log
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

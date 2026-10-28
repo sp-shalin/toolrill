@@ -1,0 +1,23 @@
+{
+  "diagnostics": {
+    "enabled": true,
+    "level": "INFO"
+  },
+  "hosts": [
+    {
+      "name": "default",
+      "incoming": {
+        "transport": "streamable-http",
+        "url": "http://0.0.0.0:3001"
+      },
+      "outgoing": [
+        {
+          "name": "external",
+          "enabled": true,
+          "transport": "streamable-http",
+          "url": "http://host.docker.internal:5051/mcp"
+        }
+      ]
+    }
+  ]
+}
